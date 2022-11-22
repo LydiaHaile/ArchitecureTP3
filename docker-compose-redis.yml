@@ -37,8 +37,8 @@ services:
     environment:
       - AllOW_EMPTY_PASSWORD=yes
       - 'REDISCLI_AUTH=bitnami'
-      - 'REDIS_CLUSTER_REPLICAS=2'
-      - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5'
+      - 'REDIS_CLUSTER_REPLICAS=1'
+      - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-5'
       - 'REDIS_CLUSTER_CREATOR=yes'
 
 volumes:
