@@ -1,0 +1,32 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/java  -classpath /Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/conf:/Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/lib/HdrHistogram-2.1.4.jar:/Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/lib/core-0.17.0.jar:/Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/lib/jackson-core-asl-1.9.4.jar:/Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/mongodb-binding/lib/logback-classic-1.1.2.jar:/Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/mongodb-binding/lib/logback-core-1.1.2.jar:/Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/mongodb-binding/lib/mongo-java-driver-3.8.0.jar:/Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/mongodb-binding/lib/mongodb-binding-0.17.0.jar:/Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/mongodb-binding/lib/slf4j-api-1.7.25.jar:/Users/lydia/Desktop/architecture/TP3/ArchitecureTP3/YCSB/ycsb-0.17.0/mongodb-binding/lib/snappy-java-1.1.7.1.jar site.ycsb.Client -load -db site.ycsb.db.MongoDbClient -s -P workloads/workloadb -p mongodb.url=mongodb://127.0.0.1:27017/ycsb?w=1
+mongo client connection created with mongodb://127.0.0.1:27017/ycsb?w=1
+[OVERALL], RunTime(ms), 488
+[OVERALL], Throughput(ops/sec), 0.0
+[TOTAL_GCS_PS_Scavenge], Count, 1
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 8
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 1.639344262295082
+[TOTAL_GCS_PS_MarkSweep], Count, 0
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 0
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.0
+[TOTAL_GCs], Count, 1
+[TOTAL_GC_TIME], Time(ms), 8
+[TOTAL_GC_TIME_%], Time(%), 1.639344262295082
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 6238.0
+[CLEANUP], MinLatency(us), 6236
+[CLEANUP], MaxLatency(us), 6239
+[CLEANUP], 95thPercentileLatency(us), 6239
+[CLEANUP], 99thPercentileLatency(us), 6239
+[INSERT], Operations, 0
+[INSERT], AverageLatency(us), NaN
+[INSERT], MinLatency(us), 9223372036854775807
+[INSERT], MaxLatency(us), 0
+[INSERT], 95thPercentileLatency(us), 0
+[INSERT], 99thPercentileLatency(us), 0
+[INSERT], Return=ERROR, 1
+[INSERT-FAILED], Operations, 1
+[INSERT-FAILED], AverageLatency(us), 92256.0
+[INSERT-FAILED], MinLatency(us), 92224
+[INSERT-FAILED], MaxLatency(us), 92287
+[INSERT-FAILED], 95thPercentileLatency(us), 92287
+[INSERT-FAILED], 99thPercentileLatency(us), 92287
