@@ -1,1 +1,4 @@
 *.pem
+results
+.DS_Store
+ycsb-0.17.0
