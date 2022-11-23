@@ -7,7 +7,7 @@ services:
     ports:
       - '6379:6379'
     environment:
-      - AllOW_EMPTY_PASSWORD=yes
+      - ALLOW_EMPTY_PASSWORD=yes
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3'
 
   redis-node-1:
@@ -15,7 +15,7 @@ services:
     volumes:
       - redis-cluster_data-1:/bitnami/redis/data
     environment:
-      - AllOW_EMPTY_PASSWORD=yes
+      - ALLOW_EMPTY_PASSWORD=yes
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3'
 
   redis-node-2:
@@ -23,7 +23,7 @@ services:
     volumes:
       - redis-cluster_data-2:/bitnami/redis/data
     environment:
-      - AllOW_EMPTY_PASSWORD=yes
+      - ALLOW_EMPTY_PASSWORD=yes
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3'
 
   redis-node-3:
@@ -36,6 +36,7 @@ services:
       - redis-node-2
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
+      - 'REDISCLI_AUTH=bitnami'
       - 'REDIS_CLUSTER_REPLICAS=1'
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3'
       - 'REDIS_CLUSTER_CREATOR=yes'
